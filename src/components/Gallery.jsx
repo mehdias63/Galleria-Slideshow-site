@@ -1,16 +1,16 @@
 function Gallery({ data, onSelectImage }) {
 	return (
-		<div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 p-4 space-y-4">
+		<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4 ">
 			{data.map((item, index) => (
 				<div
 					key={index}
-					className="break-inside-avoid cursor-pointer"
+					className="cursor-pointer break-inside-avoid"
 					onClick={() => onSelectImage(item)}
 				>
 					<img
 						src={item.images.thumbnail}
 						alt={item.name}
-						className="w-full h-auto rounded-lg shadow-md"
+						className="w-full object-cover rounded-lg shadow-md"
 					/>
 				</div>
 			))}
