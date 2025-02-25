@@ -1,6 +1,6 @@
 function Gallery({ data, onSelectImage }) {
 	return (
-		<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4 ">
+		<div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-x-6 p-4 space-y-8 ">
 			{data.map((item, index) => (
 				<div
 					key={index}

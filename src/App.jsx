@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Gallery from './components/Gallery'
-import ImageDetails from './components/ImageDetails'
+
 import data from './data.json'
+import ImageDetails from './components/ImageDetails'
 
 function App() {
 	const [selectedImage, setSelectedImage] = useState(null)
